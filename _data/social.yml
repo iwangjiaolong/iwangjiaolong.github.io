@@ -1,27 +1,24 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
+  name: iwangjiaolong
+  url: https://github.com/iwangjiaolong
 
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
 
 - sitename: LinkedIn
   name: mazhuang
   url: https://www.linkedin.com/in/mazhuang
 
-- sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
-
 - sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
+  name: 伴月行乐
+  url: https://weibo.com/u/7521880154
 
 - sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
+  name: 伴月行乐
+  url: https://www.zhihu.com/people/tao-yan-luo-bu-de-tu-xian-sheng
 
-- sitename: 豆瓣
-  name: 闷骚的程序员
-  url: http://www.douban.com/people/freedim
+- sitename: 即刻
+  name: 伴月行乐
+  url: https://web.okjike.com/u/DB74F1FC-514A-44A6-B8BE-D09E27C873E6
+
+- sitename: Bilibili
+  name: 伴月行乐
+  url: https://space.bilibili.com/239811731
