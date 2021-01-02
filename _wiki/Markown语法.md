@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Maarkdown使用语法
+title: Markdown使用语法
 categories: Markdown
 description: 一些 Markdown 使用语法
 keywords: Markdown
