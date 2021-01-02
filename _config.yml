@@ -5,9 +5,9 @@ baseurl:
 url: https://iwangjiaolong.github.io/
 date_format: "ordinal"
 title: Jiaolong
-subtitle: "demo"
-description: "Jiaolong的个人博客，公众号：闷骚的程序员"
-keywords: aaaaaaa
+subtitle: "有道无术，术尚可求，有术无道，止于求。"
+description: "Jiaolong的个人博客"
+keywords: Java
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
