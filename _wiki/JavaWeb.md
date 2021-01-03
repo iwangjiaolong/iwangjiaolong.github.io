@@ -19,3 +19,18 @@ keywords: Java
 </web-app>
 ~~~
 
+
+
+## Servlet配置web.xml
+
+~~~xml
+<servlet>
+    <servlet-name></servlet-name>
+    <servlet-class></servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name></servlet-name>
+    <url-pattern></url-pattern>
+</servlet-mapping>
+~~~
+
