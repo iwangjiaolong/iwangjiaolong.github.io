@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://iwangjiaolong.github.io/
+url: https://iwangjiaolong.github.io
 date_format: "ordinal"
 title: Jiaolong
 subtitle: "无限进步"
