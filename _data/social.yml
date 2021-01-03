@@ -3,17 +3,13 @@
   url: https://github.com/iwangjiaolong
 
 
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
-
 - sitename: 微博
   name: 伴月行乐
   url: https://weibo.com/u/7521880154
 
-- sitename: 知乎
-  name: 伴月行乐
-  url: https://www.zhihu.com/people/tao-yan-luo-bu-de-tu-xian-sheng
+# - sitename: 知乎
+#   name: 伴月行乐
+#   url: https://www.zhihu.com/people/tao-yan-luo-bu-de-tu-xian-sheng
 
 - sitename: 即刻
   name: 伴月行乐

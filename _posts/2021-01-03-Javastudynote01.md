@@ -56,7 +56,7 @@ topmost: false
 </properties>
  ```
 
-
+> 导入新项目时，如果没有显示 `Maven view`   ，需要在`pom.xml`文件内右键->选择 `add as Maven Project`
 
 # 第 03 章 三层架构 + MVC
 
