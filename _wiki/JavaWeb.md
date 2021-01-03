@@ -6,7 +6,9 @@ description: JavaWeb
 keywords: Java
 ---
 
-# web.xml
+# 文件模板
+
+## web.xml
 
 ~~~xml
 <?xml version="1.0" encoding="UTF-8" ?>
