@@ -48,7 +48,9 @@ topmost: false
 
 
 
-> 错误：请使用5，6以上
+> Error:java: 错误: 不支持发行版本 5
+
+解决办法：复制以下代码，进`pod.xml` ,修改版本号为对应版本。
 
  ```xml
 <properties>
