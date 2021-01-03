@@ -35,19 +35,6 @@ topmost: false
 
 # 第 02 章 使用Maven构建应用
 
- ```xml
-<?xml version="1.0" encoding="UTF-8" ?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
-</web-app>
- ```
-
-------
-
-
-
 > Error:java: 错误: 不支持发行版本 5
 
 解决办法：复制以下代码，进`pod.xml` ,修改版本号为对应版本。
@@ -62,7 +49,7 @@ topmost: false
 </properties>
  ```
 
-> 导入新项目时，如果没有显示 `Maven view`   ，需要在`pom.xml`文件内右键->选择 `add as Maven Project`
+导入新项目时，如果没有显示 `Maven view`   ，需要在`pom.xml`文件内右键->选择 `add as Maven Project`
 
 # 第 03 章 三层架构 + MVC
 
@@ -108,22 +95,3 @@ MVC，即 Model模型、View视图，及 Controller控制器。
 ![MVC架构](https://i.loli.net/2021/01/03/mlXqnhEVAfTbwIg.png)
 
 ![三层架构+MVC示意图](https://i.loli.net/2021/01/03/5qSrfOZ7l28G93R.png)
-
-## 三层架构练习
-
-~~~xml
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.jiaolong</groupId>
-    <artifactId>name</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>war</packaging>
-
-
-</project>
-~~~
-
