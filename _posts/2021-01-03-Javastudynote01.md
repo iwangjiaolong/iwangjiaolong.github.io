@@ -4,6 +4,7 @@ title: Java单体应用（一）
 categories: Java学习笔记
 description: some word here
 keywords: Java
+topmost: false
 ---
 
 
@@ -75,7 +76,7 @@ keywords: Java
 
 为了更好的降低各层间的耦合度，在三层架构程序设计中，采用面向抽象编程。即上层对下层的调用，是通过接口实现的。而下层对上层的真正服务提供者，是下层接口的实现类。服务标准（接口)是相同的，服务提供者（实现类)可以更换。这就实现了层间解耦合。
 
-![image-20210103115212314](https://i.loli.net/2021/01/03/GWJmfdMUCQxtqaL.png)
+![aaaa](https://i.loli.net/2021/01/03/GWJmfdMUCQxtqaL.png)
 
 
 
@@ -101,3 +102,22 @@ MVC，即 Model模型、View视图，及 Controller控制器。
 ![MVC架构](https://i.loli.net/2021/01/03/mlXqnhEVAfTbwIg.png)
 
 ![三层架构+MVC示意图](https://i.loli.net/2021/01/03/5qSrfOZ7l28G93R.png)
+
+## 三层架构练习
+
+~~~xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jiaolong</groupId>
+    <artifactId>name</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+
+</project>
+~~~
+
