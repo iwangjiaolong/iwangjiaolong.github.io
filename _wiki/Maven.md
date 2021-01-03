@@ -6,7 +6,7 @@ description: Maven
 keywords: Maven
 ---
 
-# 文件模板
+# Template
 
 ## pom.xml
 
