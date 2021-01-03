@@ -1,9 +1,9 @@
 ---
 layout: wiki
-title: Wiki Template
-categories: [cate1, cate2]
-description: some word here
-keywords: keyword1, keyword2
+title: Maven
+categories: Maven
+description: Maven
+keywords: Maven
 ---
 
 # pom.xml
