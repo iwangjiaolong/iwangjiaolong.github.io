@@ -17,11 +17,17 @@ topmost: false
 
  要有批判性思维，
 
- 面向对象的设计原则
+ **面向对象的设计原则：**
 
-![Untitled.png](https://i.loli.net/2021/01/03/Y9uL26zhnHpSy7U.png)
+**七大原则：**
 
- 产品创新思维的三重境界
+<img src="https://i.loli.net/2021/01/02/utIhb1CgwDa6nq2.png" alt="Untitled.png" style="zoom:50%;" />
+
+
+
+
+
+ **产品创新思维的三重境界**
 
  - 看山是山：学会借用，看山是山看的是山的本身，是现象
  - 看山不是山：学会遗忘，看山不是山看的是山背后的道理，是本质
