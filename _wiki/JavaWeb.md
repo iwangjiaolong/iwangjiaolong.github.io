@@ -8,6 +8,12 @@ keywords: Java
 
 # Template
 
+## 完整项目目录结构
+
+![image-20210104081421602](https://i.loli.net/2021/01/04/8UuOJNQ1pEf3Thm.png)
+
+
+
 ## web.xml
 
 ~~~xml
@@ -33,4 +39,3 @@ keywords: Java
     <url-pattern></url-pattern>
 </servlet-mapping>
 ~~~
-
