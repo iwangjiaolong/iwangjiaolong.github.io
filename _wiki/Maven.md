@@ -26,7 +26,7 @@ keywords: Maven
 </project>
 ~~~
 
-## 常用依赖
+## Maven Repository
 
 ~~~xml
 <!-- Java Servlet API  -->
