@@ -21,7 +21,7 @@ topmost: false
 
 **七大原则：**
 
-<img src="https://i.loli.net/2021/01/02/utIhb1CgwDa6nq2.png" alt="Untitled.png" style="zoom:50%;" />
+<img src="https://i.loli.net/2021/01/02/utIhb1CgwDa6nq2.png" alt="Untitled.png" style="zoom: 80%;" />
 
 
 
