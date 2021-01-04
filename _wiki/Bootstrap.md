@@ -16,7 +16,7 @@ keywords: Bootstrap
 
 ## Default
 
-~~~HTML
+~~~html
 <!DOCTYPE html>
 <html>
 <head>
