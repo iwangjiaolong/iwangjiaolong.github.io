@@ -6,6 +6,7 @@ description: some word here
 keywords: keyword1, keyword2
 ---
 
+```mindmap
 # 技能树
 ## Java 后端开发
 ## Android 开发
@@ -23,3 +24,4 @@ keywords: keyword1, keyword2
 ### 版本控制
 #### Git
 #### SVN
+```
