@@ -1,10 +1,10 @@
-# - name: 码志
-#   url: http://mazhuang.org
-#   src: life
+- name: 「彩虹屁」
+  url: https://rainbowp.jiaolong.space/
+  src: life
 
-# - name: Connie 酱
-#   url: https://connie99.github.io
-#   src: life
+- name: 「毒鸡汤」
+  url: https://fun.jiaolong.space/
+  src: life
 
 # - name: 只宁静不致远
 #   url: http://zxning.github.io
