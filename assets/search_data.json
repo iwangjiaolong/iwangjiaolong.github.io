@@ -6,7 +6,8 @@
   {% if pg.title != nil %}
     {
       "title"    : "{{ pg.title | escape }}",
-      // "url"      : "{{ site.url }}{{ pg.url }}",
+      //不通过url进行搜索
+      // "url"      : "{{ site.url }}{{ pg.url }}", 
       "keywords" : "{{ pg.keywords | escape }}"
     } ,
   {% endif %}
