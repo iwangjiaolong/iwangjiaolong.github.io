@@ -6,7 +6,7 @@
   {% if pg.title != nil %}
     {
       "title"    : "{{ pg.title | escape }}",
-      "url"      : "{{ site.url }}{{ pg.url }}",
+      // "url"      : "{{ site.url }}{{ pg.url }}",
       "keywords" : "{{ pg.keywords | escape }}"
     } ,
   {% endif %}
