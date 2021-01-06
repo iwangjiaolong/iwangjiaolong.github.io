@@ -4,7 +4,7 @@ title: Open Source Projects
 description: 开源改变世界。
 keywords: 开源,opensource,GitHub,开源项目
 comments: false
-menu: 开源项目
+menu: 开源
 permalink: /opensource/
 ---
 
