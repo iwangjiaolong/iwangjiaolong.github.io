@@ -4,13 +4,8 @@ title: Open Source Projects
 description: 开源改变世界。
 keywords: 开源,open-source,GitHub,开源项目
 comments: false
-<<<<<<< HEAD:pages/opensource.md
 menu: 开源
-permalink: /opensource/
-=======
-menu: 开源项目
 permalink: /open-source/
->>>>>>> parent of 0ae8cf5... upp:pages/open-source.md
 ---
 
 {% if site.github.public_repositories != false %}
