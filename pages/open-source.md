@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Open Source Projects
 description: 开源改变世界。
 keywords: 开源,open-source,GitHub,开源项目
