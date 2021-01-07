@@ -34,6 +34,7 @@
       <a class="gotop" href="#" title="回到顶部"><span class="octicon octicon-arrow-up"></span></a>
     </div>
     <!-- / footer -->
+
     {% if site.components.share.enabled %}
     <script src="{{ assets_base_url }}/assets/vendor/share.js/dist/js/share.min.js"></script>
     {% endif %}
@@ -128,5 +129,14 @@ $(document).ready(function(){
       </script>
     </div>
     {% endif %}
+
+
+
+    <script src="{{ assets_base_url }}/assets/js/zooming.min.js"></script>
+<script>
+var zooming = new Zooming();
+zooming.listen('img');
+</script>
+
 </body>
 </html>
