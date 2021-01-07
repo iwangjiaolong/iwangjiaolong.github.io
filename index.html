@@ -53,7 +53,7 @@ comments: false
               {% if post.topmost == true %}
               <li class="repo-list-item">
                 <h3 class="repo-list-name">
-                  <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[置顶]</span>{{ post.title }}</a>
+                  <a href="{{ site.url }}{{ post.url }}"><svg t="1609991198062" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="16556" width="200" height="200"><path d="M569.490286 592.237714l190.025143 5.851429s48.859429-27.940571 22.162285-59.392L680.155429 441.929143l-20.918858-293.814857 55.954286-62.902857s37.302857-55.954286-37.302857-62.902858L343.332571 21.065143s-51.2 39.570286-5.851428 78.043428l45.421714 45.494858-23.186286 286.793142L269.897143 532.845714s-23.332571 46.592 19.748571 64.146286l178.468572-1.170286 53.540571 410.331429 47.835429-413.915429z" fill="#d81e06" p-id="16557"></path></svg>{{ post.title }}</a>
                 </h3>
                 <p class="repo-list-description">
                 {{ post.excerpt | strip_html | strip }}
