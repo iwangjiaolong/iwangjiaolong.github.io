@@ -53,7 +53,7 @@ comments: false
               {% if post.topmost == true %}
               <li class="repo-list-item">
                 <h3 class="repo-list-name">
-                  <a href="{{ site.url }}{{ post.url }}"><img src="{{ assets_base_url }}/assets/images/top.png" style="width: 3%;position: absolute;">{{ post.title }}</a>
+                  <a href="{{ site.url }}{{ post.url }}"><img src="{{ assets_base_url }}/assets/images/top.png" style="width: 3%;position: unset;">{{ post.title }}</a>
                 </h3>
                 <p class="repo-list-description">
                 {{ post.excerpt | strip_html | strip }}
