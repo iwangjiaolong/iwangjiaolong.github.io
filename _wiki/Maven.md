@@ -54,6 +54,14 @@ keywords: Maven
     <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.30</version>
+</dependency>
+
+
 ~~~
 
 
