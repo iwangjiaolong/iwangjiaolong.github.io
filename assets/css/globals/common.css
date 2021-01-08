@@ -509,7 +509,8 @@
     margin: 0;
     font-size: 85%;
     background-color: rgba(0,0,0,.04);
-    /* border-radius: 3px */
+    border-radius: 3px；
+    border: 1px solid #ccc;
 }
 
 .markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before {
