@@ -41,21 +41,7 @@ topmost: false
 
 # 第 02 章 使用Maven构建应用
 
-> Error:java: 错误: 不支持发行版本 5
 
-解决办法：复制以下代码，进`pod.xml` ,修改版本号为对应版本。
-
- ```xml
-<properties>
-     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
-     <java.version>11</java.version>
-     <maven.compiler.source>11</maven.compiler.source>
-     <maven.compiler.target>11</maven.compiler.target>
-</properties>
- ```
-
-导入新项目时，如果没有显示 `Maven view`   ，需要在`pom.xml`文件内右键->选择 `add as Maven Project`
 
 # 第 03 章 三层架构 + MVC
 

@@ -47,3 +47,20 @@ keywords: Maven
 
 ~~~
 
+
+
+# 常见问题
+
+## 1、Error:java: 错误: 不支持发行版本 5
+
+> 解决办法：复制以下代码，进`pod.xml` ,修改版本号为对应版本。
+
+```xml
+<properties>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+     <java.version>11</java.version>
+     <maven.compiler.source>11</maven.compiler.source>
+     <maven.compiler.target>11</maven.compiler.target>
+</properties>
+```
