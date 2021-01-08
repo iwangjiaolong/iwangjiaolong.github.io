@@ -3,7 +3,7 @@ layout: page
 title: About
 description: Stay Hungry, Stay Foolish.
 keywords: Jiaolong
-comments: true
+comments: false
 menu: 关于
 permalink: /about/
 ---
