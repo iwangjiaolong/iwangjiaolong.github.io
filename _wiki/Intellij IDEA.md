@@ -6,7 +6,7 @@ description: Intellij IDEA
 keywords: Intellij IDEA
 ---
 
-# Java
+# 1、Java
 
 ## 快捷键
 
@@ -22,7 +22,7 @@ keywords: Intellij IDEA
 
 
 
-# HTML
+# 2、HTML
 
 ## 快捷键
 
