@@ -17,7 +17,7 @@ keywords: Intellij IDEA
 | `Shift`+`F6`     | 快速重命名相同变量名     |
 | `Ctrl`+`Alt`+`L` | 代码格式化               |
 | `Ctrl`+`D`       | 复制当前行到下一行       |
-| `Ctrl`+`X`       | 删除当前行               |
+| `Ctrl`+`X`       | 剪切当前行（常用于删除） |
 | `F2`             | 定位到下一个报错的代码段 |
 | `Alt`+`Enter`    | 导入包                   |
 
