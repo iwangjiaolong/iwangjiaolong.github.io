@@ -47,10 +47,3 @@ keywords: Intellij IDEA
 
 
 
-# Q & A
-
-## IDEA控制台乱码
-
-1. 打开IDEA安装目录
-
-![image-20210109223725000](C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210109223725000.png)
