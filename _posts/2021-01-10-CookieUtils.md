@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CookieUtils
+title: CookieUtils-工具类
 categories: Utils
 description: CookieUtils
 keywords: Java,Utils
