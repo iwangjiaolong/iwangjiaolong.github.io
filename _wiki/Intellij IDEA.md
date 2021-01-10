@@ -6,7 +6,7 @@ description: Intellij IDEA
 keywords: Intellij IDEA
 ---
 
-# 快捷键及快速输入
+# 一、快捷键及快速输入
 
 ## 1、Java
 
@@ -44,6 +44,5 @@ keywords: Intellij IDEA
 | `Ctrl`+`W` | 选中当前整个代码块 |
 |            |                    |
 |            |                    |
-
 
 
