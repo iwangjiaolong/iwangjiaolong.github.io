@@ -46,6 +46,14 @@ keywords: Maven
 </dependency>
 
 
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-web</artifactId>
+    <version>5.2.9.RELEASE</version>
+</dependency>
+
+
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
     <groupId>junit</groupId>
