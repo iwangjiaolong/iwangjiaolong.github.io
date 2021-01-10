@@ -62,6 +62,13 @@ keywords: Maven
 </dependency>
 
 
+<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
 ~~~
 
 
