@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Web项目默认打开「index.jsp」文件
-categories: [JavaWeb,Tomcat]
+categories: JavaWeb
 description: Web项目默认打开'index.jsp'文件
-keywords: JavaWeb,Tomcat
+keywords: JavaWeb
 topmost: false
 ---
 
