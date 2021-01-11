@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Web项目默认打开「index.jsp」文件
+title: 为什么Web项目默认打开「index.jsp」文件
 categories: JavaWeb
 description: Web项目默认打开'index.jsp'文件
 keywords: JavaWeb
