@@ -6,7 +6,7 @@ description: SpringMVC
 keywords: SpringMVC
 ---
 
-# SpringMVC
+# 一、SpringMVC
 
 ## 配置`web.xml`
 
@@ -97,7 +97,7 @@ keywords: SpringMVC
   - `suffix`：配置视图资源类型，如：`.jsp`
 - `mvc:resources`：静态资源映射，主要用于配置静态资源文件存放路径，如：JS、CSS、Image 等
 
-### 系统相关配置
+###  系统相关配置
 
 在 `spring-mvc.xnl` 中，我们配置了 `<context:property-placeholder ignore-unresolvable="true" location="classpath:myshop.properties"/>` 用于动态加载属性配置文件，实际开发中我们会将系统所需的一些配置信息封装到 `.properties` 配置文件中便于统一的管理。
 
@@ -113,7 +113,7 @@ web.view.prefix=/WEB-INF/views/
 web.view.suffix=.jsp
 ```
 
-### 去掉 Spring 配置的重复扫描
+###   去掉 Spring 配置的重复扫描
 
 由于 `spring-mvc.xml` 中已经配置了 `@Controller` 注解的扫描而 `spring-context.xml` 中配置的是扫描全部注解，故在这里需要将 `@Controller` 注解的扫描配置排除。
 
@@ -125,3 +125,28 @@ web.view.suffix=.jsp
     <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 </context:component-scan>
 ```
+
+# 二、SpringMVC拦截器
+
+###  在 `spring-mvc.xml` 中配置拦截器
+
+```text
+<!-- 拦截器配置，拦截顺序：先执行后定义的，排在第一位的最后执行。-->
+<mvc:interceptors>
+    <mvc:interceptor>
+        <mvc:mapping path="/**"/>
+        <mvc:exclude-mapping path="/static/**"/>
+        <mvc:exclude-mapping path="/login"/>
+        <bean class="com.funtl.my.shop.web.interceptor.LoginInterceptor"/>
+    </mvc:interceptor>
+</mvc:interceptors>
+```
+
+
+
+相关配置说明：
+
+- `mvc:interceptor` ：定义一个拦截器
+  - `mvc:mapping`：映射路径，需要拦截的请求路径
+  - `mvc:exclude-mapping`：需要排除的请求路径，比如登录页本身是不需要拦截的，这里还包括了静态资源路径也是不需要拦截的
+  - `bean class`：配置指定的拦截器对象
