@@ -37,6 +37,11 @@ keywords: Maven
     <scope>provided</scope>
 </dependency>
 
+<dependency>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-webmvc</artifactId>
+	<version>4.3.17.RELEASE</version>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 <dependency>
