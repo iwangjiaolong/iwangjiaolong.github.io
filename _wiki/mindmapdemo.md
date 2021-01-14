@@ -1,6 +1,6 @@
 ---
 layout: mindmap
-title: 『Mindmapdemo』
+title: mindmapdemo
 categories: mindmap
 description: some word here
 keywords: keyword1, keyword2
