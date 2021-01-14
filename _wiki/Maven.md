@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Maven
+title: - Maven -
 categories: Maven
 description: Maven
 keywords: Maven

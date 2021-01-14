@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Spring
+title: - Spring -
 categories: Spring
 description: Spring
 keywords: Spring

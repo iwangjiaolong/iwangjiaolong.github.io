@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: MVC和三层架构
+title: - MVC和三层架构 -
 categories: MVC和三层架构
 description: MVC和三层架构
 keywords: MVC和三层架构

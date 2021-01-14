@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 「Log4j」
+title: - Log4j -
 categories: Log4j
 description: Log4j
 keywords: Log4j

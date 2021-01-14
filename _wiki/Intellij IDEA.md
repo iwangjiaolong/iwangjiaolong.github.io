@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: Intellij IDEA
+title: - Intellij IDEA -
 categories: Intellij IDEA
 description: Intellij IDEA
 keywords: Intellij IDEA

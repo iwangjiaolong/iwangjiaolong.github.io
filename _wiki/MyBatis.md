@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: MyBatis
+title: - MyBatis -
 categories: MyBatis
 description: MyBatis
 keywords: MyBatis
