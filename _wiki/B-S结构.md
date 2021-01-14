@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: B/S
+title: 『B/S』
 categories: B/S
 description: B/S
 keywords: 
