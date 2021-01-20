@@ -8,9 +8,7 @@ keywords: SpringMVC
 
 > Spring MVC 也叫 Spring Web MVC ，属于展示层框架。
 
-# SpringMVC
-
-## 概述
+# 概述
 
 SpringMVC 是 Spring 框架的一部分。Spring Web MVC 框架提供了 MVC (模型 - 视图 - 控制器) 架构和用于开发灵活和松散耦合的 Web 应用程序的组件。 MVC 模式导致应用程序的不同方面(输入逻辑，业务逻辑和 UI 逻辑)分离，同时提供这些元素之间的松散耦合。
 
@@ -18,7 +16,7 @@ SpringMVC 是 Spring 框架的一部分。Spring Web MVC 框架提供了 MVC (�
 - 视图 (View)：负责渲染模型数据，一般来说它生成客户端浏览器可以解释 HTML 输出。
 - 控制器 (Controller)：负责处理用户请求并构建适当的模型，并将其传递给视图进行渲染。
 
-## DispatcherServlet 组件类
+# DispatcherServlet 组件类
 
 Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 HTTP 请求和响应。 Spring Web MVC DispatcherServlet 的请求处理工作流如下图所示：
 
@@ -35,9 +33,9 @@ Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 
 
 
 
-## 配置`web.xml`
+# 配置`web.xml`
 
-###  CharacterEncodingFilter
+##  CharacterEncodingFilter
 
 > 配置字符集过滤器，用于解决中文编码问题
 
@@ -60,7 +58,7 @@ Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 
 </filter-mapping>
 ```
 
-###  DispatcherServlet
+##  DispatcherServlet
 
 > 配置 Spring 的 Servlet 分发器处理所有 HTTP 的请求和响应
 
@@ -80,7 +78,7 @@ Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 
 </servlet-mapping>
 ```
 
-### 配置`spring-mvc.xml`
+## 配置`spring-mvc.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -124,7 +122,7 @@ Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 
   - `suffix`：配置视图资源类型，如：`.jsp`
 - `mvc:resources`：静态资源映射，主要用于配置静态资源文件存放路径，如：JS、CSS、Image 等
 
-###  系统相关配置
+##  系统相关配置
 
 在 `spring-mvc.xnl` 中，我们配置了 `<context:property-placeholder ignore-unresolvable="true" location="classpath:myshop.properties"/>` 用于动态加载属性配置文件，实际开发中我们会将系统所需的一些配置信息封装到 `.properties` 配置文件中便于统一的管理。
 
@@ -140,7 +138,7 @@ web.view.prefix=/WEB-INF/views/
 web.view.suffix=.jsp
 ```
 
-###   去掉 Spring 配置的重复扫描
+##   去掉 Spring 配置的重复扫描
 
 由于 `spring-mvc.xml` 中已经配置了 `@Controller` 注解的扫描而 `spring-context.xml` 中配置的是扫描全部注解，故在这里需要将 `@Controller` 注解的扫描配置排除。
 
@@ -153,9 +151,9 @@ web.view.suffix=.jsp
 </context:component-scan>
 ```
 
-## SpringMVC拦截器
+# SpringMVC拦截器
 
-###  在 `spring-mvc.xml` 中配置拦截器
+##  在 `spring-mvc.xml` 中配置拦截器
 
 ```text
 <!-- 拦截器配置，拦截顺序：先执行后定义的，排在第一位的最后执行。-->
