@@ -6,11 +6,13 @@ description: SpringMVC
 keywords: SpringMVC
 ---
 
+> Spring MVC 也叫 Spring Web MVC ，属于展示层框架。
+
+# SpringMVC
+
 ## 概述
 
-Spring MVC 也叫 Spring Web MVC ，属于展示层框架。SpringMVC 是 Spring 框架的一部分。
-
-Spring Web MVC 框架提供了 MVC (模型 - 视图 - 控制器) 架构和用于开发灵活和松散耦合的 Web 应用程序的组件。 MVC 模式导致应用程序的不同方面(输入逻辑，业务逻辑和 UI 逻辑)分离，同时提供这些元素之间的松散耦合。
+SpringMVC 是 Spring 框架的一部分。Spring Web MVC 框架提供了 MVC (模型 - 视图 - 控制器) 架构和用于开发灵活和松散耦合的 Web 应用程序的组件。 MVC 模式导致应用程序的不同方面(输入逻辑，业务逻辑和 UI 逻辑)分离，同时提供这些元素之间的松散耦合。
 
 - 模型 (Model)：封装了应用程序数据，通常它们将由 POJO 类组成。
 - 视图 (View)：负责渲染模型数据，一般来说它生成客户端浏览器可以解释 HTML 输出。
@@ -31,7 +33,7 @@ Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 
 
 所有上述组件，即: HandlerMapping，Controller 和 ViewResolver 是 WebApplicationContext 的一部分，它是普通 ApplicationContext 的扩展，带有 Web 应用程序所需的一些额外功能。
 
-# 一、SpringMVC
+
 
 ## 配置`web.xml`
 
@@ -151,7 +153,7 @@ web.view.suffix=.jsp
 </context:component-scan>
 ```
 
-# 二、SpringMVC拦截器
+## SpringMVC拦截器
 
 ###  在 `spring-mvc.xml` 中配置拦截器
 
