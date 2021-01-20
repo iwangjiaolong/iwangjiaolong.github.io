@@ -20,7 +20,7 @@ SpringMVC 是 Spring 框架的一部分。Spring Web MVC 框架提供了 MVC (�
 
 Spring Web MVC 框架是围绕 DispatcherServlet 设计的，它处理所有的 HTTP 请求和响应。 Spring Web MVC DispatcherServlet 的请求处理工作流如下图所示：
 
-![20151003165041682](https://i.loli.net/2021/01/20/sMnapUmA8OGx32W.png)
+![20151003165041682](https://i.loli.net/2021/01/20/HCOq5Qjd32DlLTF.png)
 
 以下是对应于到 DispatcherServlet 的传入 HTTP 请求的事件顺序：
 
