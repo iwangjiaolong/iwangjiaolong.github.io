@@ -38,21 +38,7 @@ int main() {
 
 ### 1002：数字分类
 
-**题目描述：**
-
-> 给定一系列正整数，请按要求对数字进行分类，并输出以下5个数字：
->
-> 
->
->  A1 = 能被5整除的数字中所有偶数的和；
->
->  A2 = 将被5除后余1的数字按给出顺序进行交错求和，即计算n1-n2+n3-n4...；
->
->  A3 = 被5除后余2的数字的个数；
->
->  A4 = 被5除后余3的数字的平均数，精确到小数点后1位；
->
->  A5 = 被5除后余4的数字中最大数字。
+<img src="https://i.loli.net/2021/01/21/F8HRbtjJk4aqoIP.png" alt="image-20210121160101970" style="width:705px;" />
 
 ~~~c
 //
@@ -142,7 +128,7 @@ int main() {
 
 ### 1003：数素数
 
-<img src="https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png" alt="image-20210121144531091" style="width:705px;" />
+<img src="https://i.loli.net/2021/01/21/FIGvMHb6ydf3zKa.png" alt="image-20210121160215822" style="width:705px;" />
 
 ~~~c
 //
@@ -193,3 +179,6 @@ int main() {
 }
 ~~~
 
+### 1004：福尔摩斯的约会
+
+<img src="https://i.loli.net/2021/01/21/pjgqGLIHJr2fO8E.png" alt="image-20210121160339749" style="width:705px;" />
