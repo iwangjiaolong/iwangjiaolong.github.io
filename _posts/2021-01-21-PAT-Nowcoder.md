@@ -11,9 +11,7 @@ topmost: false
 
 ### 1001：A+B和C
 
-**题目描述：**
-
-> 给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
+<img src="https://i.loli.net/2021/01/21/eztPJj8yNwoDQIv.png" alt="image-20210121152334331" style="width:705px;" />
 
 ~~~c
 //
