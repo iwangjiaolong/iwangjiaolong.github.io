@@ -11,7 +11,7 @@ topmost: false
 
 ### 1001：A+B和C
 
-<img src="https://i.loli.net/2021/01/21/eztPJj8yNwoDQIv.png" alt="image-20210121152334331" style="width:705px;" />
+<img src="https://i.loli.net/2021/01/21/eztPJj8yNwoDQIv.png" alt="image-20210121152334331"  />
 
 ~~~c
 //
