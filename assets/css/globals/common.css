@@ -504,17 +504,7 @@
     text-align: right
 }
 
-.markdown-body code{
-    padding: .2em 0;
-    margin: 5px;
-    font-size: 85%;
-    background-color: #f9f2f4;
-    border-radius: 3px!important;
-    color: #d83b64;
-}
-
-
-.markdown-body tt {
+.markdown-body code,.markdown-body tt {
     padding: .2em 0;
     margin: 5px;
     font-size: 85%;
