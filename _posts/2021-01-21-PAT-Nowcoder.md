@@ -7,7 +7,7 @@ keywords: C
 topmost: false
 ---
 
-> https://www.nowcoder.com/pat/6/problems
+**网址：**https://www.nowcoder.com/pat/6/problems
 
 ### 1001：A+B和C
 
