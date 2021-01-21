@@ -9,7 +9,7 @@ topmost: false
 
 > **链接：**[PAT乙级(Basic Level)真题](https://www.nowcoder.com/pat/6/problems)
 
-### 1001：A+B和C
+# 1001：A+B和C
 
 <img src="https://i.loli.net/2021/01/21/eztPJj8yNwoDQIv.png" alt="image-20210121152334331"  />
 
@@ -36,7 +36,7 @@ int main() {
 
 
 
-### 1002：数字分类
+# 1002：数字分类
 
 <img src="https://i.loli.net/2021/01/21/F8HRbtjJk4aqoIP.png" alt="image-20210121160101970" style="zoom:;" />
 
@@ -126,7 +126,7 @@ int main() {
 }
 ~~~
 
-### 1003：数素数
+# 1003：数素数
 
 <img src="https://i.loli.net/2021/01/21/FIGvMHb6ydf3zKa.png" alt="image-20210121160215822" style="zoom:;" />
 
@@ -261,6 +261,6 @@ int main() {
 }
 ~~~
 
-### 1005：德才论
+# 1005：德才论
 
 ![image-20210121202329659](https://i.loli.net/2021/01/21/CWZXld8HEBT6eFr.png)
