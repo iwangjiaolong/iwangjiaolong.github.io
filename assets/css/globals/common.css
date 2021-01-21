@@ -216,7 +216,7 @@
 }
 
 .markdown-body {
-    overflow: hidden
+    /*overflow: hidden*/
 }
 
 .markdown-body>:first-child {
