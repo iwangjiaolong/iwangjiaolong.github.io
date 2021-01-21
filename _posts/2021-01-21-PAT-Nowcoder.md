@@ -182,3 +182,85 @@ int main() {
 ### 1004：福尔摩斯的约会
 
 <img src="https://i.loli.net/2021/01/21/pjgqGLIHJr2fO8E.png" alt="image-20210121160339749" style="zoom:;" />
+
+~~~c
+//
+// Created by Jiaolong on 2021/1/21.
+//
+
+#include<stdio.h>
+#include<string.h>
+
+int main() {
+    char arr1[60], arr2[60], arr3[60], arr4[60];
+    int k1, k2, k3, k4, i, j, flag = 0, num;
+    scanf("%s %s %s %s", arr1, arr2, arr3, arr4);
+    k1 = strlen(arr1);
+    k2 = strlen(arr2);
+    k3 = strlen(arr3);
+    k4 = strlen(arr4);
+
+    for (int i = 0; i < (k1 < k2 ? k1 : k2); i++) {
+        if (arr1[i] == arr2[i]) {
+            if (flag == 0 && arr1[i] >= 'A' && arr1[i] <= 'G') {
+                switch (arr1[i]) {
+                    case 'A':
+                        printf("MON ");
+                        break;
+                    case 'B':
+                        printf("TUE ");
+                        break;
+                    case 'C':
+                        printf("WED ");
+                        break;
+                    case 'D':
+                        printf("THU ");
+                        break;
+                    case 'E':
+                        printf("FRI ");
+                        break;
+                    case 'F':
+                        printf("SAT ");
+                        break;
+                    case 'G':
+                        printf("SUN ");
+                        break;
+                }
+                flag++;
+                continue;
+            }
+
+            if (flag == 1) {
+                if (arr1[i] >= '0' && arr1[i] <= '9') {
+                    printf("0%c:", arr1[i]);
+                }
+                if (arr1[i] >= 'A' && arr1[i] <= 'N') {
+                    num = arr1[i] - 65 + 10;
+                    printf("%d:", num);
+                }
+                flag++;
+            }
+        }
+    }
+
+    for (int j = 0; j < (k3 < k4 ? k3 : k4); j++) {
+        if (arr3[j] == arr4[j]) {
+            if ((arr3[j] >= 'a' && arr3[j] <= 'z') || (arr3[j] >= 'A' && arr3[j] <= 'Z')) {
+                if (j < 10) {
+                    printf("0%d", j);
+                } else {
+                    printf("%d", j);
+                }
+                break;
+            }
+        }
+    }
+
+
+    return 0;
+}
+~~~
+
+### 1005：德才论
+
+![image-20210121202329659](https://i.loli.net/2021/01/21/CWZXld8HEBT6eFr.png)
