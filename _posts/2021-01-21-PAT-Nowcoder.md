@@ -144,7 +144,7 @@ int main() {
 
 ### 1003：数素数
 
-<img src="https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png" alt="image-20210121144531091" style="zoom:90%;" />
+<img src="https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png" alt="image-20210121144531091" style="width:705px;" />
 
 ~~~c
 //
