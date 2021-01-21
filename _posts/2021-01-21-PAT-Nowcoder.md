@@ -143,9 +143,7 @@ int main() {
 ~~~
 
 ### [ 1003：数素数](https://www.nowcoder.com/pat/6/problem/4079)
- **题目描述**：
-
-> 令Pi表示第i个素数。现任给两个正整数M <= N <= 10000，请输出PM到PN的所有素数。
+![image-20210121144531091](https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png)
 
 ~~~C
 //
