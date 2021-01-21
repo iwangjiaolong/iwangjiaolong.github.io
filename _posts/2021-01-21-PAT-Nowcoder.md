@@ -16,6 +16,10 @@ topmost: false
 > 给定区间[-2的31次方, 2的31次方]内的3个整数A、B和C，请判断A+B是否大于C。
 
 ~~~c
+//
+// Created by Jiaolong on 2021/1/21.
+//
+
 #include <stdio.h>
 
 int main() {
@@ -53,21 +57,140 @@ int main() {
 >  A5 = 被5除后余4的数字中最大数字。
 
 ~~~C
+//
+// Created by Jiaolong on 2021/1/21.
+//
+
 #include <stdio.h>
-int main(){
-    int a[1000]={0};
-    int n,b,c,i,A1=0,A2=0,A3=0,A4=0,A5=0;
-    while (~scanf("%d"),&n){
-        for(i=0;i<=a;i++){
-            scanf("%d",&a[i]);
+
+int main() {
+    int a[1000] = {0};
+    int n, b, c, i, A1 = 0, A2 = 0, A3 = 0, A4 = 0, A5 = 0, ch = 0;
+    float avg = 0.0,a4num = 0.0;
+    while (~scanf("%d", &n)) {
+        for (i = 0; i < n; ++i) {
+            scanf("%d", &a[i]);
         }
-        for (int j = 0; j <= n; j++) {
+        for (int j = 0; j < n; ++j) {
             //A1
-            if(a[j]%5==0){
-                if(a[j]%2==0){
-                    A1+=a[j];
+            if (a[j] % 5 == 0) {
+                if (a[j] % 2 == 0) {
+                    A1 += a[j];
                 }
             }
+
+            //A2
+            if (a[j] % 5 == 1) {
+                if (ch == 0) {
+                    A2 = a[j];
+                    ch++;
+                } else {
+                    if (ch % 2 == 0) {
+                        A2 += a[j];
+                    } else {
+                        A2 -= a[j];
+                    }
+                    ch++;
+                }
+
+            }
+
+            //A3
+            if (a[j] % 5 == 2) {
+                A3++;
+            }
+
+            //A4
+            if (a[j] % 5 == 3) {
+                a4num++;
+                A4 += a[j];
+                avg = (A4 / a4num);
+            }
+
+            //A5
+            if (a[j] % 5 == 4) {
+                if (a[j] > A5) {
+                    A5 = a[j];
+                }
+            }
+
+        }
+
+        if(A1!=0)
+            printf("%d ",A1);
+        else
+            printf("N ");
+        if(A2!=0)
+            printf("%d ",A2);
+        else
+            printf("N ");
+        if(A3!=0)
+            printf("%d ",A3);
+        else
+            printf("N ");
+        if(A4!=0)
+            printf("%.1f ",avg);
+        else
+            printf("N ");
+        if(A5!=0)
+            printf("%d",A5);
+        else
+            printf("N");
+        return 0;
+
+    }
+}
+~~~
+
+### [ 1003：数素数](https://www.nowcoder.com/pat/6/problem/4079)
+ **题目描述**：
+
+> 令Pi表示第i个素数。现任给两个正整数M <= N <= 10000，请输出PM到PN的所有素数。
+
+~~~C
+//
+// Created by Jiaolong on 2021/1/21.
+//
+
+#include<stdio.h>
+#include<math.h>
+
+int judge(int num) {
+    int k = (int) sqrt((double) num);
+    for (int i = 2; i <= k; i++) {
+        if (num % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main() {
+    int arr[10000];
+    int sign = 0;
+    int a = 0;
+    int i = 2;
+    while (sign <= 10000) {
+        if (judge(i) == 1) {
+            arr[sign] = i;
+            sign++;
+        }
+        i++;
+    }
+    int m, n;
+    scanf("%d %d", &m, &n);
+    for (int i = m - 1; i <= n - 1; i++) {
+
+        if (i == n - 1) {
+            printf("%d", arr[i]);
+        } else {
+            printf("%d ", arr[i]);
+        }
+
+        a++;
+        if (a == 10) {
+            printf("\n");
+            a = 0;
         }
     }
 }
