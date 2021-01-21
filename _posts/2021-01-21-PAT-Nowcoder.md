@@ -56,7 +56,7 @@ int main() {
 >
 >  A5 = 被5除后余4的数字中最大数字。
 
-~~~C
+~~~c
 //
 // Created by Jiaolong on 2021/1/21.
 //
@@ -145,7 +145,7 @@ int main() {
 ### [ 1003：数素数](https://www.nowcoder.com/pat/6/problem/4079)
 ![image-20210121144531091](https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png)
 
-~~~C
+~~~c
 //
 // Created by Jiaolong on 2021/1/21.
 //
