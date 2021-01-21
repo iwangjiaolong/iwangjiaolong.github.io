@@ -7,7 +7,7 @@ keywords: C
 topmost: false
 ---
 
-**网址：**https://www.nowcoder.com/pat/6/problems
+> **链接：**[PAT乙级(Basic Level)真题](https://www.nowcoder.com/pat/6/problems)
 
 ### 1001：A+B和C
 
