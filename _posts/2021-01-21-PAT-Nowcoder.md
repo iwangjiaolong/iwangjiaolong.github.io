@@ -126,6 +126,8 @@ int main() {
 }
 ~~~
 
+
+
 # 1003：数素数
 
 <img src="https://i.loli.net/2021/01/21/FIGvMHb6ydf3zKa.png" alt="image-20210121160215822" style="zoom:;" />
@@ -179,7 +181,9 @@ int main() {
 }
 ~~~
 
-### 1004：福尔摩斯的约会
+
+
+# 1004：福尔摩斯的约会
 
 <img src="https://i.loli.net/2021/01/21/pjgqGLIHJr2fO8E.png" alt="image-20210121160339749" style="zoom:;" />
 
@@ -260,6 +264,8 @@ int main() {
     return 0;
 }
 ~~~
+
+
 
 # 1005：德才论
 
