@@ -38,7 +38,7 @@ int main() {
 
 ### 1002：数字分类
 
-<img src="https://i.loli.net/2021/01/21/F8HRbtjJk4aqoIP.png" alt="image-20210121160101970" style="width:705px;" />
+<img src="https://i.loli.net/2021/01/21/F8HRbtjJk4aqoIP.png" alt="image-20210121160101970" style="zoom:;" />
 
 ~~~c
 //
@@ -128,7 +128,7 @@ int main() {
 
 ### 1003：数素数
 
-<img src="https://i.loli.net/2021/01/21/FIGvMHb6ydf3zKa.png" alt="image-20210121160215822" style="width:705px;" />
+<img src="https://i.loli.net/2021/01/21/FIGvMHb6ydf3zKa.png" alt="image-20210121160215822" style="zoom:;" />
 
 ~~~c
 //
@@ -181,4 +181,4 @@ int main() {
 
 ### 1004：福尔摩斯的约会
 
-<img src="https://i.loli.net/2021/01/21/pjgqGLIHJr2fO8E.png" alt="image-20210121160339749" style="width:705px;" />
+<img src="https://i.loli.net/2021/01/21/pjgqGLIHJr2fO8E.png" alt="image-20210121160339749" style="zoom:;" />
