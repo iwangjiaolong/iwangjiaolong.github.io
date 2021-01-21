@@ -9,7 +9,7 @@ topmost: false
 
 > https://www.nowcoder.com/pat/6/problems
 
-### [1001：A+B和C](https://www.nowcoder.com/pat/6/problem/4077)
+### 1001：A+B和C
 
 **题目描述：**
 
@@ -38,7 +38,7 @@ int main() {
 
 
 
-### [1002：数字分类](https://www.nowcoder.com/pat/6/problem/4078)
+### 1002：数字分类
 
 **题目描述：**
 
@@ -142,8 +142,9 @@ int main() {
 }
 ~~~
 
-### [ 1003：数素数](https://www.nowcoder.com/pat/6/problem/4079)
-![image-20210121144531091](https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png)
+### 1003：数素数
+
+<img src="https://i.loli.net/2021/01/21/3yVFYMjG6T9W8XI.png" alt="image-20210121144531091" style="zoom:80%;" />
 
 ~~~c
 //
