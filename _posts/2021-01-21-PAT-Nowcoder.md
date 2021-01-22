@@ -270,3 +270,118 @@ int main() {
 # 1005：德才论
 
 ![image-20210121202329659](https://i.loli.net/2021/01/21/CWZXld8HEBT6eFr.png)
+
+~~~c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
+int flag_node(int *p, int high, int low)
+{
+    if (p[1] < low || p[2] < low)
+        return 0;          // 第五类
+    else if (p[1] >= high && p[2] >= high)
+        return 4;          // 第一类
+    else if (p[1] >= high)
+        return 3;          // 第二类
+    else if (p[2] <= p[1])
+        return 2;          // 第三类
+    else
+        return 1;          // 第四类
+}
+
+int comp(const void *a_t, const void *b_t)
+{
+    int *a = (int*)a_t, *b = (int*)b_t;
+    int sum1 = a[1]+a[2], sum2 = b[1]+b[2];
+
+    if (sum1 != sum2)      return sum2 - sum1; // 按总分排序
+    else if (a[1] != b[1]) return b[1] - a[1]; // 总分相等时按德分排序
+    else                   return a[0] - b[0]; // 德分相等时按学号排序
+}
+
+int main()
+{
+    int low, high, n, cs, tmp[3], cn[4] = {0};
+    scanf("%d %d %d", &n, &low, &high);
+    int a[4][n][3];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d %d %d", tmp, tmp+1, tmp+2);
+        cs = flag_node(tmp, high, low); // 按题目要求分类
+        if (cs) memcpy(a[cs-1][cn[cs-1]++], tmp, 3*sizeof(int)); //只记录前四类有用的数据
+    }
+
+    printf("%d\n", cn[0]+cn[1]+cn[2]+cn[3]); // 输出记录数据的份数
+    for (int i = 3; i >= 0; i--) {
+        qsort(a[i], cn[i], 3*sizeof(int), comp); // 对每一类排序
+        for (int j = 0; j < cn[i]; j++) // 排序后直接输出
+            printf("%d %d %d\n", a[i][j][0], a[i][j][1], a[i][j][2]);
+    }
+
+    return 0;
+}
+~~~
+
+
+
+
+
+# 1006：部分A+B
+
+![image-20210122113400180](https://i.loli.net/2021/01/22/IpOVyaF4Klumozb.png)
+
+~~~c
+//
+// Created by Jiaolong on 2021/1/22.
+//
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int countsame(int a, char b) {
+    int m = 0;
+    char stringa[16] = {0};
+//    itoa(a, stringa, 10);
+    snprintf(stringa, 16, "%d", a);
+    for (int i = 0; i < strlen(stringa); i++) {
+        if (stringa[i] == b) {
+            m++;
+        }
+    }
+    return m;
+}
+
+int chartonum(int times, char num) {
+    char a[16] = {0};
+    for (int i = 0; i < times; i++) {
+        a[i] = num;
+    }
+    return atoi(a);
+}
+
+
+int main() {
+    int a, b, m, n, Pa, Pb;
+    char Da, Db;
+    char stringa[16] = {0}, stringb[16] = {0};
+    scanf("%d %c %d %c", &a, &Da, &b, &Db);
+    m = countsame(a, Da);
+    n = countsame(b, Db);
+    Pa = chartonum(m, Da);
+    Pb = chartonum(n, Db);
+    printf("%d", Pa + Pb);
+    return 0;
+}
+~~~
+
+> `itoa();`函数只在window下可使用，oj系统使用Linux进行编译，故会报错。应使用`snpring()`代替
+>
+> `int snprintf ( char * str, size_t size, const char * format, ... );`
+>
+> - **str** -- 目标字符串。
+> - **size** -- 拷贝字节数(Bytes)。
+> - **format** -- 格式化成字符串。
+> - **...** -- 可变参数。
+
