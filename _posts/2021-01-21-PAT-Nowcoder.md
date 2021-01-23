@@ -30,6 +30,14 @@ int main() {
     }
 }
 
+/*
+输入例子:
+4
+1 2 3
+2 3 4
+2147483647 0 2147483646
+0 -2147483648 -2147483647
+*/
 ~~~
 
 > 因long类型只能表示到2^31-1，故要使用long long 类型表示
@@ -124,6 +132,11 @@ int main() {
 
     }
 }
+
+/*
+输入例子:
+13 1 2 3 4 5 6 7 8 9 10 20 16 18
+*/
 ~~~
 
 
@@ -179,6 +192,12 @@ int main() {
         }
     }
 }
+
+/*
+输入例子:
+5 27
+*/
+
 ~~~
 
 
@@ -263,6 +282,14 @@ int main() {
 
     return 0;
 }
+
+/*
+输入例子:
+3485djDkxh4hhGE
+2984akDfkkkkggEdsb
+s&hgsfdk
+d&Hyscvnm
+*/
 ~~~
 
 
@@ -321,6 +348,25 @@ int main()
 
     return 0;
 }
+
+/*
+输入例子:
+14 60 80
+10000001 64 90
+10000002 90 60
+10000011 85 80
+10000003 85 80
+10000004 80 85
+10000005 82 77
+10000006 83 76
+10000007 90 78
+10000008 75 79
+10000009 59 90
+10000010 88 45
+10000012 80 100
+10000013 90 99
+10000014 66 60
+*/
 ~~~
 
 
@@ -374,6 +420,11 @@ int main() {
     printf("%d", Pa + Pb);
     return 0;
 }
+
+/*
+输入例子:
+3862767 6 13530293 3
+*/
 ~~~
 
 > `itoa();`函数只在window下可使用，oj系统使用Linux进行编译，故会报错。应使用`snpring()`代替
@@ -389,19 +440,7 @@ int main() {
 
 # 1007：A除以B
 
-![image-20210122162139084](https://i.loli.net/2021/01/22/CRjKNH4xSUw3FDq.png)
-
-**输入例子:**
-
-```
-123456789050987654321 7
-```
-
-**输出例子:**
-
-```
-17636684150141093474 3
-```
+![image-20210122163719671](https://i.loli.net/2021/01/22/XnDzqWgdlBrZ7M2.png)
 
 > 解题思路：手算除法
 
@@ -430,17 +469,119 @@ int main(){
     printf(" %d",q);
 }
 
+/*
+输入例子:
+123456789050987654321 7
+*/
 ~~~
 
 
 
-# B1007：锤子剪刀布
+# 1008：锤子剪刀布
 
-![image-20210122162414213](https://i.loli.net/2021/01/22/sy2MQ57ZVOHLGKg.png)
+![image-20210122164644288](https://i.loli.net/2021/01/22/PbF2CJsV6wXpnaU.png)
 
-**输入例子:**
+~~~c
+//
+// Created by Jiaolong on 2021/1/22.
+//
 
-```
+#include <stdio.h>
+
+int ct1 = 0, jt1 = 0, bt1 = 0, win1 = 0, lose1 = 0, place1 = 0;
+int ct2 = 0, jt2 = 0, bt2 = 0, win2 = 0, lose2 = 0, place2 = 0;
+
+void judge(char a, char b) {
+    if (a == 'C' && b == 'C') {
+        place1++;
+        place2++;
+    }
+    if (a == 'C' && b == 'J') {
+        win1++;
+        lose2++;
+        ct1++;
+    }
+    if (a == 'C' && b == 'B') {
+        lose1++;
+        win2++;
+        bt2++;
+    }
+    if (a == 'J' && b == 'C') {
+        lose1++;
+        win2++;
+        ct2++;
+    }
+    if (a == 'J' && b == 'J') {
+        place1++;
+        place2++;
+    }
+    if (a == 'J' && b == 'B') {
+        win1++;
+        lose2++;
+        jt1++;
+    }
+    if (a == 'B' && b == 'C') {
+        win1++;
+        lose2++;
+        bt1++;
+    }
+    if (a == 'B' && b == 'J') {
+        lose1++;
+        win2++;
+        jt2++;
+    }
+    if (a == 'B' && b == 'B') {
+        place1++;
+        place2++;
+    }
+}
+
+char maxwin(int c, int j, int b) {
+    int max = c;
+    char maxc = 'C';
+    if (j > max) {
+        max = j;
+        maxc = 'J';
+    }
+    if (b > max) {
+        max = b;
+        maxc = 'B';
+    }
+
+    if (c == j && c == max) {
+        maxc = 'C';
+    }
+    if (c == b && c == max) {
+        maxc = 'B';
+    }
+    if (b == j && b == max) {
+        maxc = 'B';
+    }
+
+
+    return maxc;
+}
+
+int main() {
+    int n;
+    char a[105] = {0}, b[105] = {0};
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf(" %c %c", &a[i], &b[i]);
+    }
+    for (int j = 0; j < n; j++) {
+        judge(a[j], b[j]);
+    }
+
+    printf("%d %d %d\n", win1, place1, lose1);
+    printf("%d %d %d\n", win2, place2, lose2);
+    printf("%c %c", maxwin(ct1, jt1, bt1), maxwin(ct2, jt2, bt2));
+
+}
+
+/*
+输入例子:
 10
 C J
 J B
@@ -452,13 +593,89 @@ C B
 J B
 B C
 J J
-```
+*/
+~~~
 
-**输出例子:**
 
-```
-5 3 2
-2 3 5
-B B
-```
 
+
+
+
+
+# 1009：数字黑洞
+
+![image-20210122174605797](https://i.loli.net/2021/01/22/BChjYuJ1qpZxRKe.png)
+
+~~~c
+//
+// Created by Jiaolong on 2021/1/22.
+//
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int p1[4], p2[4], temp, res, big = 0, small = 0;
+    int i, j, m, k, l;
+    do {
+//    n放在数组里
+        for (i = 0; i < 4; i++) {
+            p1[3 - i] = n % 10;
+            n = n / 10;
+        }
+
+
+        for (j = 0; j < 3; j++) {
+            for (k = 0; k < 3 - j; k++) {
+                if (p1[k] < p1[k + 1]) {
+                    temp = p1[k];
+                    p1[k] = p1[k + 1];
+                    p1[k + 1] = temp;
+                }
+            }
+        }
+
+        for (m = 0; m < 4; m++) {
+            p2[m] = p1[4 - m - 1];
+        }
+
+        for (n = 0; n < 4; n++) {
+            big += p1[n] * powf(10, 3 - n);
+        }
+
+        for (l = 0; l < 4; l++) {
+            small += p2[l] * powf(10, 3 - l);
+        }
+
+
+        res = big - small;
+        if (small > 100 && small < 1000)
+            printf("%d - 0%d = %d\n", big, small, res);
+        else if (small > 10 && small < 100)
+            printf("%d - 00%d = %d\n", big, small, res);
+        else if (small < 10)
+            printf("%d - 000%d = %d\n", big, small, res);
+        else
+            printf("%d - %d = %d\n", big, small, res);
+        n = res;
+        big = small = 0;
+    } while (res != 0 && res != 6174);
+
+
+    return 0;
+}
+
+/*
+输入例子:
+6767
+*/
+
+~~~
+
+
+
+# 1010：月饼
+
+![image-20210123103303082](https://i.loli.net/2021/01/23/TusV6Mqkb8PSJAW.png)
