@@ -51,9 +51,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb:
-欢迎来到我的主页，我是一个不懂艺术的艺术家，一个还没想好做什么的个人开发者。
-
+blurb: 欢迎来到我的主页，我是一个不懂艺术的艺术家，一个还没想好做什么的个人开发者。
 blurb-btn-link: '/about'
 blurb-btn-name: know more
 
