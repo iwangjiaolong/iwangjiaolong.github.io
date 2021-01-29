@@ -11,7 +11,7 @@ keywords: Java
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
-repository: jiaolonga/jiaolonga.github.io
+repository: Wang-Jiaolong/Wang-Jiaolong.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
@@ -41,9 +41,9 @@ highlight_theme: github
 author: Jiaolong
 organization: 
 organization_url: 
-github_username: jiaolonga
+github_username: Wang-Jiaolong
 location: Zhengzhou, China
-email: jiaolonga@gmail.com
+email: iwangjiaolong@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -122,14 +122,14 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: jiaolonga
+    owner: Wang-Jiaolong
     repo: blog-comments
     oauth:
         client_id: d2e1cbbd298958076462
         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: jiaolonga
+    owner: Wang-Jiaolong
     repo: blog-comments
     clientID: 2e5b70de81f1cd22ba1d
     clientSecret: 39dcf45bfe9161b82304e9a63f5e20fc3a5964d3
