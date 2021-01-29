@@ -94,9 +94,12 @@ blurb-btn-name: know more
 skills-title: Skills
 skills:
 - {name: Java, color: '#fdb157', value: '50%'}
-- {name: HTML, color: '#9473e6', value: '30%'}
+- {name: HTML, color: '#FFAEB9', value: '30%'}
+- {name: CSS, color: '#9473e6', value: '30%'}
 - {name: After Effects, color: '#bdecf6', value: '30%'}
 - {name: Photoshop, color: '#ffbcaa', value: '30%'}
+
+
 
 
 #-------------------------------
