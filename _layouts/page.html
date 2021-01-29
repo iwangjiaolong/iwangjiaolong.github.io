@@ -2,51 +2,24 @@
 layout: default
 ---
 
-{% assign assets_base_url = site.url %}
-{% if site.cdn.jsdelivr.enabled %}
-{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
-{% endif %}
-<section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15}}">
-    <div class="container">
-      <div class="columns">
-        <div class="column two-thirds">
-          <div class="collection-title">
-            <h1 class="collection-header">{{ page.title }}</h1>
-            {% if page.subtitle %}
-            <div class="collection-info">
-              <span class="meta-info">
-                {{ page.subtitle}}
-              </span>
-            </div>
-            {% endif %}
-          </div>
-        </div>
-        <div class="column one-third mobile-hidden">
-          {% include sidebar-qrcode.html %}
-        </div>
+<!-- page title -->
+<section class="page-title bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary">{{ page.title }}</h1>
       </div>
     </div>
+  </div>
+  <!-- background shapes -->
+  <img src="{{ site.baseurl }}/assets/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7">
 </section>
-<!-- / .banner -->
- <section class="container content">
-        <div class="columns">
-            <div class="column two-thirds" >
-                <article class="article-content markdown-body">
-                    {{ content }}
-                </article>
-                <div class="share">
-                    {% include sns-share.html %}
-                </div>
-                <div class="comment">
-                    {% include comments.html %}
-                </div>
-            </div>
-            <div class="column one-third">
-                {% include sidebar-search.html %}
-                {% include sidebar-categories-cloud.html %}
-                {% include sidebar-ad.html %}
-                {% include sidebar-popular-repo.html %}
-            </div>
-        </div>
-    </section>
-    <!-- /section.content -->
+<!-- /page title -->
+
+{{ content }}
