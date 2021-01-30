@@ -8,7 +8,7 @@ description: this is meta description
 email: iwangjiaolong@163.com
 phone: 132 9810 4675
 address: China,Henan,Zhengzhou
-copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
+copyright: Copyright &copy; 2020 [Jiaolong](https://github.com/Wang-Jiaolong)
 
 menu:
 - {name: About, link: '/about'}
@@ -51,7 +51,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: 欢迎来到我的主页，我是一个不懂艺术的艺术家，一个还没想好做什么的个人开发者。
+blurb: I'm Jiaolong，一个不懂艺术的艺术家，一个还没想好做什么的个人开发者，一个正在成长的程序员。
 blurb-btn-link: '/about'
 blurb-btn-name: know more
 
@@ -96,8 +96,7 @@ skills:
 - {name: Java, color: '#fdb157', value: '50%'}
 - {name: HTML, color: '#FFAEB9', value: '30%'}
 - {name: CSS, color: '#9473e6', value: '30%'}
-- {name: After Effects, color: '#bdecf6', value: '30%'}
-- {name: Photoshop, color: '#ffbcaa', value: '30%'}
+- {name: JS, color: '#bdecf6', value: '30%'}
 
 
 
@@ -117,7 +116,7 @@ skills:
 
 education-title: Education
 education:
-- {name: 中原工学院, date: '2017-2021', images: assets/images/portfolio/item-3.png,organization: 'Zhongyuan University Of Technology'}
+- {name: 中原工学院, date: '2017-2021',organization: 'Zhongyuan University Of Technology'}
 
 
 
