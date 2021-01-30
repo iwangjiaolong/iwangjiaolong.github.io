@@ -118,8 +118,11 @@ education-title: Education
 education:
 - {name: 中原工学院, date: '2017-2021',img: zut.png ,organization: 'Zhongyuan University Of Technology'}
 
+- {name: 哔哩哔哩大学, date: '2021-至今',img: bilibili.png ,organization: 'Bilibili University'}
 
 
+
+University
 #-------------------------------
 # Services Section
 
