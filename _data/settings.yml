@@ -12,9 +12,8 @@ copyright: Copyright &copy; 2020 [Jiaolong](https://github.com/Wang-Jiaolong)
 
 menu:
 - {name: About, link: '/about'}
-- {name: Blog, link: '/blog'}
+- {name: Blog, link: 'https://blog.jiaolong.space/'}
 - {name: Portfolio, link: '/portfolio'}
-- {name: Contact, link: '/contact'}
 
 
 #-------------------------------
