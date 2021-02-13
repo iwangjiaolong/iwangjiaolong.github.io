@@ -94,9 +94,9 @@ blurb-btn-name: know more
 skills-title: Skills
 skills:
 - {name: Java, color: '#fdb157', value: '50%'}
-- {name: HTML, color: '#FFAEB9', value: '30%'}
-- {name: CSS, color: '#9473e6', value: '30%'}
-- {name: JS, color: '#bdecf6', value: '30%'}
+- {name: HTML/CSS, color: '#FFAEB9', value: '30%'}
+- {name: JS, color: '#9473e6', value: '30%'}
+- {name: Photoshop, color: '#00FFFF', value: '20%'}
 
 
 
@@ -116,9 +116,9 @@ skills:
 
 education-title: Education
 education:
-- {name: 中原工学院, date: '2017-2021',img: zut.png ,organization: 'Zhongyuan University Of Technology'}
+- {name: 中原工学院, date: '2017-2021',img: zut.png , major: '软件工程', organization: 'Zhongyuan University Of Technology'}
 
-- {name: 哔哩哔哩大学, date: '2021-至今',img: bilibili.png ,organization: 'Bilibili University'}
+- {name: 哔哩哔哩大学, date: '2021-至今',img: bilibili.png , major: 'Java全栈', organization: 'Bilibili University'}
 
 #-------------------------------
 # Services Section
